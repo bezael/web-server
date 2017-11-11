@@ -19,7 +19,7 @@ app.use(middleware.logger);
 app.use(express.static(__dirname+'/public'));
 
 app.get('/about', middleware.requireAuthenticaion,(req, res)=>{
-	res.send('About us');
+	res.send('About us!');
 });
 
 app.listen(port,()=>{
